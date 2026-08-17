@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First_WebApp </title>
+</head>
+<body>
+<h1>I am in working Mode</h1>
+<a href="{% url 'result'%}" >Type Your Data Here Below.</a>
+<br></br>
+
+<form action="{% url 'result'%}">
+
+<br></br>
+
+    {% csrf_token %}
+    <h>TYPE YOUR NAME:</h>
+    <input type ="text" name="user_age">
+    <br></br>
+    <h>TYPE YOUR AGE:</h>
+    <input type ="text" name="user_name">
+    <br></br>
+    <input type="submit" value="Submit">
+
+
+
+</form>
+
+</body>
+</html>
